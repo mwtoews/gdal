@@ -18,6 +18,8 @@
 
 int main(int argc, char *argv[])
 {
+    GDALAllRegister();
     printf("%s\n", GDALVersionInfo("RELEASE_NAME"));
+    GDALDestroy();
     return (0);
 }
